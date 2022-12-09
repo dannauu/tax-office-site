@@ -1,6 +1,7 @@
 .logoText {
     transform: rotate(-25deg);
-    -ms-transform: rotate(-25deg);	 /*  for IE  */
+    -ms-transform: rotate(-25deg);
+    /*  for IE  */
 
     /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
     -webkit-transform: rotate(-25deg);

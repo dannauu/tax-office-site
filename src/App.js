@@ -1,11 +1,13 @@
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
+import HeroBanner from './components/HeroBanner/HeroBanner';
 
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Navigation />
+      <HeroBanner />
     </div>
   );
 }

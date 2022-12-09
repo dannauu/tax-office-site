@@ -1,0 +1,6 @@
+.map {
+    height: 300px;
+    aspect-ratio: 2 /1 ;
+    border: solid black 7px;
+    border-radius: 5px;
+}
