@@ -29,3 +29,7 @@
 a:hover {
     cursor: pointer;
 }
+
+.formPics {
+    height: 400px;
+}

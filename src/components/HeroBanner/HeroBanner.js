@@ -13,7 +13,7 @@ const HeroBanner = () => {
                     <GoogleMaps />
                 </div>
                 <div className='hours'>
-                    <h1 className='text-4xl bold'>Hours of Operation:</h1>
+                    <h1 className='text-4xl bold italic'>Hours of Operation:</h1>
                     <ul className='text-center'>
                         <li>Monday: <span>10:00am - 5:00pm</span></li>
                         <li>Tuesday: <span>10:00am - 5:00pm</span></li>
