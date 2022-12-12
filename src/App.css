@@ -1,0 +1,53 @@
+body {
+    overflow-x: hidden;
+}
+
+.logoText {
+    transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    /*  for IE  */
+
+    /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+    -webkit-transform: rotate(-25deg);
+    display: inline-block;
+
+}
+
+.map {
+    height: 300px;
+    aspect-ratio: 2 /1;
+    border: solid black 7px;
+    border-radius: 5px;
+}
+
+.image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(./assets/tax-office.jpg);
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hours {
+    background-color: rgba(0, 0, 0, 0.354);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+}

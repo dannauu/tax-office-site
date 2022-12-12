@@ -1,5 +1,4 @@
 import React from 'react'
-import './GoogleMaps.css'
 
 const GoogleMaps = () => {
   return (

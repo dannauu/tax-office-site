@@ -8,7 +8,7 @@ import PrepListImg from '../../assets/prepList.png'
 
 const Forms = () => {
   return (
-    <div className='pb-6'>
+    <div className='pb-6' id='forms'>
       <h1 className='text-center text-4xl p-3'>Forms</h1>
       <div className='flex flex-row justify-evenly text-center pb-10'>
         <div>
