@@ -5,14 +5,14 @@ const data = {
     rows: [
         {
             title: "What do you charge for one federal and one state return?",
-            content: 'We start our prices at 140 dollars, extra fees will apply additional forms, call for estimates.',
+            content: 'We start our prices at $140, extra fees will apply for additional forms, please call for estimates.',
         },
         {
-            title: "Can I drop off my taxes during and after hours?",
+            title: "Can I drop my taxes off after regular business hours?",
             content: "Yes we have a mailbox out front with envelopes, inside envelopes are forms to fill out. If the forms are not fully filled out it can cause your tax return to be delayed. There is a slot next to the front door that comes in the building that you can drop them into. During business hours your documents can be dropped off in the building, please be respectful of our limited space as tax season is also cold, flu and covid season.",
         },
         {
-            title: "How can you file an extension?",
+            title: "How do I file an extension?",
             content: `Fill out our information sheet and email or drop off if you are new, previous clients give us a call.`,
         },
         {
@@ -20,11 +20,12 @@ const data = {
             content: `Normal tax year is April 15th, however; tax season for the year 2022/2023 tax season is April 18, 2023 due to Federal holiday. `,
         },
         {
+            title: "What are the benefits of filing an extension?",
+            content: `It gives you more time, however: it only saves you the late filing fee. Interest and penalties for not paying by the April deadline will be owed at the time of filing. If you believe you will owe you can always send in payment with your extension in April and file later.`,
+        },
+        {
             title: "When is the deadline for extensions?",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+            content: `October 15th is usually the date unless the IRS extends such as during the pandemic.`,
         },
         {
             title: "Why do I need to bring address verification for dependents?",
@@ -35,39 +36,11 @@ const data = {
             content: `We do not.`,
         },
         {
-            title: "Where is my local IRS office and phone number?",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
-        },
-        {
-            title: "Why did I get a letter asking me to apply for an ID protection pin number?",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
-        },
-        {
-            title: "Do you do small business taxes, sole proprietor??",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
-        },
-        {
             title: "Do you do farms, business, rental tax forms?",
             content: `We do farm rentals and personal farm taxes. We also do sole proprietor business forms and personal residential rental tax forms. Call for estimates.`,
         },
         {
-            title: "Do we do residential rental taxes?",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
-        },
-        {
-            title: "Are you a CPA?",
+            title: "Are you a CPA and or do you do bookkeeping?",
             content: `We are not CPA's, we are tax preparers that specialize in personal tax returns. We also do not do bookkeeping but can refer you to one if needed.`,
         },
         {
@@ -100,17 +73,18 @@ const styles = {
     // rowContentPaddingBottom: '10px',
     // rowContentPaddingLeft: '50px',
     // rowContentPaddingRight: '150px',
-    // arrowColor: "red",
-    //transitionDuration: "1s",
+    arrowColor: "green",
+    transitionDuration: "1s",
     // timingFunc: "ease"
   }
 
 
 const FAQ = () => {
   return (
-    <div className='text-center' id="faq">
-        <div className='text-center m-10'>
-            <h1 className="pt-10 text-4xl">Frequently Asked Questions</h1>
+    <div className='bg-cover border-2 border-black w-5/6 m-auto mobileFaqContainer' id="faq">
+        <div className='text-center p-10 mobileFaq'>
+            <h1 className="text-4xl mobileFaqH1">Frequently Asked Questions</h1>
+            <p className="p-5 mobileFaqP">Below are some commonly asked questions that we get, if a question you have is not listed below feel free to contact us <a className="italic text-blue-700" href="TEL:816-690-7997">here</a></p>
             <Faq
             data={data}
             styles={styles}

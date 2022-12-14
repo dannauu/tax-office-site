@@ -8,7 +8,7 @@ const Navigation = () => {
     // </nav>
 
 
-    <nav class="bg-white">
+    <nav class="bg-white border-b-8 border-double border-black">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
         <h1 className='text-4xl'>TAXES <span className='logoText text-2xl'>BY</span> ME.TJR</h1>
         <div class="">

@@ -3,6 +3,7 @@ import Navigation from './components/Navigation/Navigation';
 import HeroBanner from './components/HeroBanner/HeroBanner';
 import FAQ from './components/FAQ/FAQ';
 import Forms from './components/Forms/Forms';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <HeroBanner />
       <Forms/>
       <FAQ/>
+      <Footer/>
     </div>
   );
 }
