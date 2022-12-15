@@ -17,8 +17,8 @@ const HeroBanner = () => {
                         <li className='font-bold italic'>Wednesday: <span className='font-thin'>9:00am - 8:00pm</span></li>
                         <li className='font-bold italic'>Thursday: <span className='font-thin'>9:00am - 8:00pm</span></li>
                         <li className='font-bold italic'>Friday: <span className='font-thin'>9:00am - 8:00pm</span></li>
-                        <li className='font-bold italic'>Saturday: <span className='font-thin'>10:00am - 5:00pm</span></li>
-                        <li className='font-bold italic'>Sunday: <span className='font-thin'>10:00am - 5:00pm</span></li>
+                        <li className='font-bold italic'>Saturday: <span className='font-thin'>9:00am - 3:00pm</span></li>
+                        <li className='font-bold italic'>Sunday: <span className='font-thin'>Closed</span></li>
                     </ul>
                     <p className='text-center italic text-sm pt-2 lg:text-xs'>**Off-Season hours vary, call for appointment**</p>
                     <div className='flex flex-row text-xs pt-1 justify-center'>
