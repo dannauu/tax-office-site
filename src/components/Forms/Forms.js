@@ -14,17 +14,17 @@ const Forms = () => {
         <div>
         <h1 className='sm:text-xs font-bold'>Questions Form</h1>
           <img src={QuestionsImg} className='formPics sm:w-40 pb-10' />
-          <a href={Questions} download className="sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+          <a href={Questions} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
         </div>
         <div>
           <h1 className='sm:text-xs font-bold'>Tax Info Sheet</h1>
           <img src={InfoSheetImg} className='formPics sm:w-40 pb-10' />
-          <a href={TaxInfoSheet} download className="sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
         </div>
         <div>
         <h1 className='sm:text-xs font-bold'>Tax Prep Checklist</h1>
           <img src={PrepListImg} className='formPics sm:w-40 pb-10' />
-          <a href={TaxPrepList} download className="sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+          <a href={TaxPrepList} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
         </div>
       </div>
     </div>
