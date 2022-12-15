@@ -17,11 +17,11 @@ body {
 
 }
 
-.map {
+/* .map {
     height: 300px;
     aspect-ratio: 2 / 1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
+} */
 
 .image {
     height: 100vh;
@@ -45,75 +45,26 @@ body {
     justify-content: space-evenly;
 }
 
-.hours {
-    background-color: rgba(0, 0, 0, 0.494);
-    border-radius: 5px;
-    padding: 10px;
-}
-
 a:hover {
     cursor: pointer;
 }
 
-/* .row-title-text {
-    color: black;
-} */
+.faqBG {
+    background-image: url(./assets/headerPic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-@media (max-width: 1250px) {
-    .hide {
-        display: none;
-    }
+/* ----------------------------MEDIA QUERIES---------------------------- */
 
-    .formsMobile {
-        width: 100px;
-    }
-
-    .formsMobileBtns {
-        font-size: 6px;
-        color: black;
-    }
-
-    .test {
-        margin: auto;
-        justify-content: center;
-    }
-
+/* Media Query for react-faq-component since tailwind doesn't override styles */
+@media (max-width: 639px) {
     .row-title-text {
-        font-size: 12px;
+        font-size: 10px !important;
+        font-weight: 600 !important;
     }
 
     .row-content-text {
         font-size: 10px !important;
-    }
-
-    .mobileFaqH1 {
-        font-size: 20px;
-    }
-
-    .mobileFaqP {
-        font-size: 14px;
-    }
-    .mobileFaqContainer {
-        width: 95%
-    }
-
-    .mobileFaq {
-        padding: 5px;
-    }
-
-    .hours, li {
-        font-size: 10px;
-    }
-
-    .mobileHeroBannerH1 {
-        font-size: 20px !important;
-        text-align: center; 
-        padding-bottom: 0;
-    }
-
-    .map {
-        height: 100px;
-        aspect-ratio: 2 / 1;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
   }

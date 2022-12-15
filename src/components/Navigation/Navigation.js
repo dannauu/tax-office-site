@@ -8,11 +8,11 @@ const Navigation = () => {
     // </nav>
 
 
-    <nav class="bg-white border-b-8 border-double border-black">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <h1 className='text-4xl'>TAXES <span className='logoText text-2xl'>BY</span> ME.TJR</h1>
-        <div class="">
-          <ul class="flex flex-row p-4 font-medium">
+    <nav className="bg-white border-b-8 border-double border-black">
+      <div className="container flex flex-wrap items-center justify-between mx-auto sm:justify-center">
+        <h1 className='text-4xl sm:text-base pl-5 font-medium sm:p-0'>TAXES <span className='logoText text-2xl sm:text-xs'>BY</span> ME.TJR</h1>
+        <div>
+          <ul className="flex flex-row p-4 font-medium sm:text-xs">
             <li>
               <a href="#forms" className="p-2" aria-current="page">Forms</a>
             </li>

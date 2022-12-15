@@ -81,10 +81,10 @@ const styles = {
 
 const FAQ = () => {
   return (
-    <div className='bg-cover border-2 border-black w-5/6 m-auto mobileFaqContainer' id="faq">
-        <div className='text-center p-10 mobileFaq'>
-            <h1 className="text-4xl mobileFaqH1">Frequently Asked Questions</h1>
-            <p className="p-5 mobileFaqP">Below are some commonly asked questions that we get, if a question you have is not listed below feel free to contact us <a className="italic text-blue-700" href="TEL:816-690-7997">here</a></p>
+    <div className='border-2 border-black w-5/6 m-auto faqBG' id="faq">
+        <div className='text-center p-10 sm:p-2'>
+            <h1 className="text-4xl sm:text-sm font-bold">Frequently Asked Questions</h1>
+            <p className="p-5 sm:text-xs font-semibold">Below are some commonly asked questions that we get, if a question you have is not listed below feel free to contact us <a className="italic text-blue-700" href="TEL:816-690-7997">here</a></p>
             <Faq
             data={data}
             styles={styles}
