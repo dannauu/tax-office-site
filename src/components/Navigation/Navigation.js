@@ -2,10 +2,6 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    // <nav className='flex flex-row'>
-    //     <h1 className='text-4xl basis-1/2 text-center'>TAXES <span className='logoText text-2xl'>BY</span> ME.TJR</h1>
-    //     <button className='text-3xl basis-1/2 text-center'>816-690-7997</button>
-    // </nav>
 
 
     <nav className="bg-white border-b-8 border-double border-black">
