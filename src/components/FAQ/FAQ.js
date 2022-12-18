@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
 
 const data = {
@@ -76,22 +75,22 @@ const styles = {
     arrowColor: "green",
     transitionDuration: "1s",
     // timingFunc: "ease"
-  }
+}
 
 
 const FAQ = () => {
-  return (
-    <div className='border-2 border-black w-5/6 m-auto faqBG' id="faq">
-        <div className='text-center p-10 sm:p-2'>
-            <h1 className="text-4xl sm:text-sm font-bold">Frequently Asked Questions</h1>
-            <p className="p-5 sm:text-xs font-semibold">Below are some commonly asked questions that we get, if a question you have is not listed below feel free to contact us <a className="italic text-blue-700" href="TEL:816-690-7997">here</a></p>
-            <Faq
-            data={data}
-            styles={styles}
-            config={config}/>
+    return (
+        <div className='border-2 border-black w-5/6 m-auto faqBG' id="faq">
+            <div className='text-center p-10 sm:p-2'>
+                <h1 className="text-4xl sm:text-sm font-bold">Frequently Asked Questions</h1>
+                <p className="p-5 sm:text-xs font-semibold">Below are some commonly asked questions that we get, if a question you have is not listed below feel free to contact us <a className="italic text-blue-700" href="TEL:816-690-7997">here</a></p>
+                <Faq
+                    data={data}
+                    styles={styles}
+                    config={config} />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default FAQ

@@ -12,7 +12,7 @@ const Forms = () => {
   return (
     <div className='pb-6' id='forms'>
       <h1 className='text-center text-4xl p-2 sm:text-lg italic font-bold'>Forms</h1>
-      <h2 className='text-center pb-4 sm:text-sm italic'>Click the form you would like to download/print</h2>
+      <h2 className='text-center font-semibold pb-4 sm:text-sm italic'>Click the form you would like to download</h2>
       <div className='flex flex-row sm:flex-wrap sm:justify-center justify-evenly text-center pb-10'>
         <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>Questions Form</h1>
