@@ -6,9 +6,9 @@ import Hours from '../Hours/Hours'
 const HeroBanner = () => {
     return (
         <section className='image'>
-                  <AboutMessage />
+            <AboutMessage />
             <div className='overlay sm:flex-col'>
-                <GoogleMaps/>
+                <GoogleMaps />
                 <Hours />
             </div>
         </section>

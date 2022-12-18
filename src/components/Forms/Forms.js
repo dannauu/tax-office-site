@@ -5,30 +5,33 @@ import TaxPrepList from '../../assets/2022 TAX PREP CHECKLIST.pdf'
 import QuestionsImg from '../../assets/infoQuestions.png'
 import InfoSheetImg from '../../assets/infoSheet.png'
 import PrepListImg from '../../assets/prepList.png'
+import EngagementLetterImg from '../../assets/generalEngagementLetter.png'
+import EngagementLetter from '../../assets/2022 GENERAL ENGAGEMENT LETTER.pdf'
 
 const Forms = () => {
   return (
     <div className='pb-6' id='forms'>
-      <h1 className='text-center text-4xl p-3 sm:text-lg italic font-extrabold'>Forms</h1>
-      <div className='flex flex-row justify-evenly text-center pb-10'>
-        <div>
-        <h1 className='sm:text-xs font-bold'>Questions Form</h1>
-          <img src={QuestionsImg} className='formPics sm:w-40 pb-10' />
-          <a href={Questions} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+      <h1 className='text-center text-4xl p-2 sm:text-lg italic font-bold'>Forms</h1>
+      <h2 className='text-center pb-4 sm:text-sm italic'>Click the form you would like to download/print</h2>
+      <div className='flex flex-row sm:flex-wrap sm:justify-center justify-evenly text-center pb-10'>
+        <div className='sm:p-2'>
+          <h1 className='sm:text-xs font-bold'>Questions Form</h1>
+          <a href={Questions} download className="rounded-lg sm:text-xs text-white "><img src={QuestionsImg} className='formPics sm:w-40 pb-10' /></a>
         </div>
-
-{/* UPDATE FORMS WITH EMAIL FROM SHAWNA */}
-
-
-        <div>
+        <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>Tax Info Sheet</h1>
-          <img src={InfoSheetImg} className='formPics sm:w-40 pb-10' />
-          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs">          <img src={InfoSheetImg} className='formPics sm:w-40 pb-10' />
+          </a>
         </div>
-        <div>
-        <h1 className='sm:text-xs font-bold'>Tax Prep Checklist</h1>
-          <img src={PrepListImg} className='formPics sm:w-40 pb-10' />
-          <a href={TaxPrepList} download className="rounded-lg sm:text-xs text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 px-5 py-2.5 text-center mr-2 mb-2">Download</a>
+        <div className='sm:p-2'>
+          <h1 className='sm:text-xs font-bold'>Tax Prep Checklist</h1>
+          <a href={TaxPrepList} download className="rounded-lg sm:text-xs">          <img src={PrepListImg} className='formPics sm:w-40 pb-10' />
+          </a>
+        </div>
+        <div className='sm:p-2'>
+          <h1 className='sm:text-xs font-bold'>General Engagement Letter</h1>
+          <a href={EngagementLetter} download className="rounded-lg sm:text-xs">          <img src={EngagementLetterImg} className='formPics sm:w-40 pb-10' />
+          </a>
         </div>
       </div>
     </div>
