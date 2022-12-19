@@ -16,21 +16,21 @@ const Forms = () => {
       <div className='flex flex-row sm:flex-wrap sm:justify-center justify-evenly text-center pb-10'>
         <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>Questions Form</h1>
-          <a href={Questions} download className="rounded-lg sm:text-xs text-white "><img src={QuestionsImg} className='formPics sm:w-40 pb-10' /></a>
+          <a href={Questions} download className="rounded-lg sm:text-xs text-white "><img src={QuestionsImg} alt='question-form' className='formPics sm:w-40 pb-10' /></a>
         </div>
         <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>Tax Info Sheet</h1>
-          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs">          <img src={InfoSheetImg} className='formPics sm:w-40 pb-10' />
+          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs">          <img src={InfoSheetImg} alt='info-sheet' className='formPics sm:w-40 pb-10' />
           </a>
         </div>
         <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>Tax Prep Checklist</h1>
-          <a href={TaxPrepList} download className="rounded-lg sm:text-xs">          <img src={PrepListImg} className='formPics sm:w-40 pb-10' />
+          <a href={TaxPrepList} download className="rounded-lg sm:text-xs">          <img src={PrepListImg} alt='prep-list' className='formPics sm:w-40 pb-10' />
           </a>
         </div>
         <div className='sm:p-2'>
           <h1 className='sm:text-xs font-bold'>General Engagement Letter</h1>
-          <a href={EngagementLetter} download className="rounded-lg sm:text-xs">          <img src={EngagementLetterImg} className='formPics sm:w-40 pb-10' />
+          <a href={EngagementLetter} download className="rounded-lg sm:text-xs">          <img src={EngagementLetterImg} alt='engagement-letter' className='formPics sm:w-40 pb-10' />
           </a>
         </div>
       </div>
