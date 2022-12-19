@@ -4,31 +4,31 @@ const data = {
     rows: [
         {
             title: "What do you charge for one federal and one state return?",
-            content: 'We start our prices at $140, extra fees will apply for additional forms, please call for estimates.',
+            content: 'Our base price for a federal and one state return is $140. Extra fees will apply for additional forms, please call for an estimate. ',
         },
         {
             title: "Can I drop my taxes off after regular business hours?",
-            content: "Yes we have a mailbox out front with envelopes, inside envelopes are forms to fill out. If the forms are not fully filled out it can cause your tax return to be delayed. There is a slot next to the front door that comes in the building that you can drop them into. During business hours your documents can be dropped off in the building, please be respectful of our limited space as tax season is also cold, flu and covid season.",
+            content: "Yes on the front side of the building we have a mailbox with forms and an envelope to enclose your documents in. Drop them into the slot located next to the front door. If the forms are not fully filled out it will cause a delay. During business hours you can bring in your information, but please be mindful of our waiting room space and the spead of illnesses during this season.",
         },
         {
             title: "How do I file an extension?",
-            content: `Fill out our information sheet and email or drop off if you are new, previous clients give us a call.`,
+            content: `Fill out our information sheet and email or drop off if you are new, previous clients can give us a call.`,
         },
         {
             title: "When is the regular season tax deadline?",
-            content: `Normal tax year is April 15th, however; tax season for the year 2022/2023 tax season is April 18, 2023 due to Federal holiday. `,
+            content: `A Normal tax year is April 15th, however; tax season for the year 2022/2023 tax season is April 18, 2023 due to Federal holiday. `,
         },
         {
             title: "What are the benefits of filing an extension?",
-            content: `It gives you more time, however: it only saves you the late filing fee. Interest and penalties for not paying by the April deadline will be owed at the time of filing. If you believe you will owe you can always send in payment with your extension in April and file later.`,
+            content: `It allows you more time, however it only saves you from a late filing fee from the government.`,
         },
         {
             title: "When is the deadline for extensions?",
-            content: `October 15th is usually the date unless the IRS extends such as during the pandemic.`,
+            content: `October 15th, unless the IRS extends the date.`,
         },
         {
             title: "Why do I need to bring address verification for dependents?",
-            content: `Per the IRS we as tax preparers have to do our due diligence for every return or we can face a fine if audited.`,
+            content: `It is required by the IRS. We as tax preparers have to do our due diligence for every return or we can face a fine if audited.`,
         },
         {
             title: "Do we file S-corps, partnerships or C-corps?",
@@ -36,7 +36,7 @@ const data = {
         },
         {
             title: "Do you do farms, business, rental tax forms?",
-            content: `We do farm rentals and personal farm taxes. We also do sole proprietor business forms and personal residential rental tax forms. Call for estimates.`,
+            content: `We do farms, rentals and personal farm taxes. We also do sole proprietor business forms and personal residential rental tax forms. Call for estimates.`,
         },
         {
             title: "Are you a CPA and or do you do bookkeeping?",
@@ -48,7 +48,7 @@ const data = {
         },
         {
             title: "Can you file states other than Missouri?",
-            content: `Yes we file all states, Charge for other states is 25 dollars per state.`,
+            content: `Yes we can file any US state. Each additional state is an extra $25.`,
         },
 
     ],
