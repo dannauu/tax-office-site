@@ -60,6 +60,10 @@ a:hover {
     .row-content-text {
         font-size: 10px !important;
     }
+    
+    .overlay {
+        top: 200px
+    }
 }
 
 .googleFont {
