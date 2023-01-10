@@ -21,7 +21,7 @@ const Hours = () => {
                 <h1 className='text-4xl font-semibold pb-3 lg:text-lg underline'>Contact Us</h1>
                 <HiHomeModern className='text-6xl sm:text-2xl' />
                 <h2 className=''><span className='font-bold italic'>Address:</span> 1003 S Broadway, Oak Grove, MO 64075</h2>
-                <a href='https://www.google.com/maps/dir//taxes+by+metjr/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x87c1138d04c71b07:0xcd5ce04dfe19d5db?sa=X&ved=2ahUKEwiu4azCjIn8AhUaADQIHfAWADMQ9Rd6BAg6EAU' target='_blank' className='underline'>Get Directions</a>
+                <a href='https://www.google.com/maps/dir//taxes+by+metjr/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x87c1138d04c71b07:0xcd5ce04dfe19d5db?sa=X&ved=2ahUKEwiu4azCjIn8AhUaADQIHfAWADMQ9Rd6BAg6EAU' target='_blank' rel="noreferrer" className='underline'>Get Directions</a>
                 <p className='pr-3'><span className='font-bold italic'>Phone: </span>(816) 690-7997</p>
                 <p><span className='font-bold italic'>Fax: </span>(816) 625-1472</p>
                 <h1 className='text-center'><span className='font-bold italic'>Email:</span> <a href='mailto:taxesbymetjr@gmail.com' className='cursor-pointer underline'>taxesbymetjr@gmail.com</a></h1>

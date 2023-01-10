@@ -1,38 +1,26 @@
-import React from 'react';
-import Questions from '../../assets/2022 INFO QUESTIONS.pdf'
-import TaxInfoSheet from '../../assets/2022 TAX INFO SHEET.pdf'
-import TaxPrepList from '../../assets/2022 TAX PREP CHECKLIST.pdf'
-import QuestionsImg from '../../assets/infoQuestions.png'
-import InfoSheetImg from '../../assets/infoSheet.png'
-import PrepListImg from '../../assets/prepList.png'
-import EngagementLetterImg from '../../assets/generalEngagementLetter.png'
-import EngagementLetter from '../../assets/2022 GENERALENGAGELETTER.pdf'
+import React, { useState } from 'react';
+import AllTaxPayersForm from './AllTaxPayersForm';
+import GeneralEngagementForm from './GeneralEngagementForm';
+import TaxInfoSheetForm from './TaxInfoSheetForm';
+import TaxPrepListForm from './TaxPrepListForm';
 
 const Forms = () => {
+  const [currentForm, setCurrentForm] = useState('');
   return (
-    <div className='pb-6' id='forms'>
-      <h1 className='text-center text-4xl p-2 sm:text-lg italic font-bold'>Forms</h1>
-      <h2 className='text-center font-semibold pb-4 sm:text-sm italic'>Click on the form you would like to download</h2>
+    <div className='pb-6 relative z-1' id='forms'>
+      <h1 className='text-center text-4xl p-2 sm:text-lg italic font-bold printPageButton'>Forms</h1>
+      <h2 className='text-center font-semibold pb-4 sm:text-sm italic printPageButton'>Click the button to fillout/download the form:</h2>
+      <div className='flex justify-evenly printPageButton sm:p-1'>
+        <button className='cursor-pointer px-2 py-1 rounded bg-green-500 hover:bg-green-700 sm:text-xs sm:p-0' onClick={() => setCurrentForm('tax-questions')}>All Tax Payers Questions</button>
+        <button className='cursor-pointer px-2 py-1 rounded bg-green-500 hover:bg-green-700 sm:text-xs sm:p-0 ml-1' onClick={() => setCurrentForm('tax-info-sheet')}>Tax Info Form</button>
+        <button className='cursor-pointer px-2 py-1 rounded bg-green-500 hover:bg-green-700 sm:text-xs sm:p-0 ml-1' onClick={() => setCurrentForm('tax-prep-list')}>Tax Prep Form</button>
+        <button className='cursor-pointer px-2 py-1 rounded bg-green-500 hover:bg-green-700 sm:text-xs sm:p-0 ml-1' onClick={() => setCurrentForm('general-engagement')}>General Engagement Form</button>
+      </div>
       <div className='flex flex-row sm:flex-wrap sm:justify-center justify-evenly text-center pb-10'>
-        <div className='sm:p-2'>
-          <h1 className='sm:text-xs font-bold underline'>Questions Form</h1>
-          <a href={Questions} download className="rounded-lg sm:text-xs text-white "><img src={QuestionsImg} alt='question-form' className='formPics sm:w-40 pb-10' /></a>
-        </div>
-        <div className='sm:p-2'>
-          <h1 className='sm:text-xs font-bold underline'>Tax Info Sheet</h1>
-          <a href={TaxInfoSheet} download className="rounded-lg sm:text-xs">          <img src={InfoSheetImg} alt='info-sheet' className='formPics sm:w-40 pb-10' />
-          </a>
-        </div>
-        <div className='sm:p-2'>
-          <h1 className='sm:text-xs font-bold underline'>Tax Prep Checklist</h1>
-          <a href={TaxPrepList} download className="rounded-lg sm:text-xs">          <img src={PrepListImg} alt='prep-list' className='formPics sm:w-40 pb-10' />
-          </a>
-        </div>
-        <div className='sm:p-2'>
-          <h1 className='sm:text-xs font-bold underline'>General Engagement Letter</h1>
-          <a href={EngagementLetter} download className="rounded-lg sm:text-xs">          <img src={EngagementLetterImg} alt='engagement-letter' className='formPics sm:w-40 pb-10' />
-          </a>
-        </div>
+        {currentForm === 'tax-questions' && <AllTaxPayersForm />}
+        {currentForm === 'tax-info-sheet' && <TaxInfoSheetForm />}
+        {currentForm === 'tax-prep-list' && <TaxPrepListForm />}
+        {currentForm === 'general-engagement' && <GeneralEngagementForm />}
       </div>
     </div>
   )

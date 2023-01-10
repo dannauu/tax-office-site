@@ -4,7 +4,7 @@ const Navigation = () => {
   return (
 
 
-    <nav className="bg-white border-b-8 border-double border-black">
+    <nav className="bg-white border-b-8 border-double border-black printPageButton">
       <div className="container flex flex-wrap items-center justify-between mx-auto sm:justify-center">
         <div className='pl-5 sm:p-0'>
           <h1 className='text-4xl sm:text-base pl-5 font-medium sm:p-0 sm:text-center underline'>TAXES <span className='logoText text-2xl sm:text-xs'>BY</span> ME.TJR</h1>
