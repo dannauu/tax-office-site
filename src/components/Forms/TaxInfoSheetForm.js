@@ -1,7 +1,7 @@
 import React, { forwardRef, useState, useRef } from 'react'
 import ReactToPrint from 'react-to-print';
 
-const TaxInfoSheetForm = forwardRef((props, ref) => {
+const TaxInfoSheetForm = forwardRef((ref, onChange) => {
     const [isDivorced, setIsDivorced] = useState(false);
     const [isDeceased, setIsDeceased] = useState(false);
     const componentRef = useRef();
@@ -22,6 +22,15 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
 
     }
 
+    const [ssn, setSSN] = useState('');
+
+    function handleSSNChange(e) {
+        let value = e.target.value.replace(/[^0-9]/g, "");;
+        value = value.substring(0, 3) + "-" + value.substring(3, 5) + "-" + value.substring(5);
+        setSSN(value);
+    }
+
+
     // ---------------------------------------------------------------- FIX IT TO WHERE YOU CAN DESELECT CHOICE -----------------------------------------------------------------------------------
 
     return (
@@ -37,93 +46,93 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                         </div>
                         <div className='flex flex-row'>
                             <label className='font-medium basis-1/2'>YOUR NAME:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>SOCIAL SECURITY #:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>BIRTHDATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>PRIMARY PHONE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>SECONDARY PHONE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>OCCUPATION:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>DRIVER'S LICENSE #:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>ISSUE DATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>EXPIRATION DATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>STATE DRIVER'S LICENSE ISSUED:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>EMAIL ADDRESS:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                     </div>
                     <div className='flex flex-col w-full sm:pr-2'>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>SPOUSE'S NAME:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>SOCIAL SECURITY #:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>BIRTHDATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>PRIMARY PHONE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>SECONDARY PHONE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>OCCUPATION:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>DRIVER'S LICENSE #:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>ISSUE DATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>EXPIRATION DATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>STATE DRIVER'S LICENSE ISSUED:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex'>
                             <label className='font-medium basis-1/2'>EMAIL ADDRESS:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                     </div>
                 </div>
@@ -132,19 +141,19 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                         <label className='font-medium text-center underline text-base sm:text-xs'>ADDRESS:</label>
                         <div className='flex justify-between'>
                             <label className=' font-medium basis-1/2'>STREET:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex justify-between'>
                             <label className=' font-medium basis-1/2'>CITY:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex justify-between'>
                             <label className=' font-medium basis-1/2'>STATE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                         <div className='flex justify-between'>
                             <label className=' font-medium basis-1/2'>ZIP CODE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                            <input className='border-b-2 border-black p-1 basis-3/4'></input>
                         </div>
                     </div>
                     <div className='w-full text-center'>
@@ -159,11 +168,11 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                         </div>
                         <div className='flex p-1' style={{ display: isDeceased ? "flex" : "none" }}>
                             <label className='font-medium text-center text-base px-2 bg-lime-500 sm:text-xs'>IF DECEASED after 1/1/2022 INPUT DATE HERE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black ml-2 w-1/5'></span>
+                            <input className='border-b-2 border-black ml-2 w-1/5'></input>
                         </div>
                         <div className='flex p-1' style={{ display: isDivorced ? "flex" : "none" }}>
                             <label className='font-medium text-center text-base px-2 bg-lime-500 sm:text-xs'>IF DIVORCED after 1/1/2020 INPUT DATE HERE:</label>
-                            <span contentEditable="true" className='border-b-2 border-black ml-2 w-1/5'></span>
+                            <input className='border-b-2 border-black ml-2 w-1/5'></input>
                         </div>
                     </div>
                 </div>
@@ -183,31 +192,31 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                 <div className='flex justify-evenly sm:flex-col'>
                     <div className='flex flex-col w-1/5 sm:w-4/5 sm:m-auto'>
                         <label className='sm:text-center font-medium'>NAME:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
                     </div>
                     <div className='flex flex-col w-1/5 sm:w-4/5 sm:m-auto'>
                         <label className='sm:text-center font-medium'>SOCIAL SECURITY:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
                     </div>
                     <div className='flex flex-col w-1/5 sm:w-4/5 sm:m-auto'>
                         <label className='sm:text-center  font-medium'>RELATIONSHIP:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
                     </div>
                     <div className='flex flex-col w-1/5 sm:w-4/5 sm:m-auto pb-10 sm:pb-5'>
                         <label className='sm:text-center  font-medium'>BIRTHDATE:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 '></span>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
+                        <input className='border-b-2 border-black p-1 '></input>
                     </div>
                     <div className='flex flex-col pb-5 sm:m-auto' >
                         <label className=' font-medium'>DAYCARE EXP:</label>
@@ -255,7 +264,7 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                         <button className='px-2 py-1' onClick={(e) => { handleBtnClick(e) }}>YES</button>
                         <button className='px-2 py-1' onClick={(e) => { handleBtnClick(e) }}>NO</button>
                         <label className=' font-medium  '>IF YES PLEASE PROVIDE:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 text-left'></span>
+                        <input className='border-b-2 border-black p-1 text-left'></input>
                     </div>
                     <div>
                         <label className=' font-medium  '>DO YOU HAVE HEALTH INSURANCE THROUGH THE MARKETPLACE(OBAMA CARE)?: </label>
@@ -268,26 +277,26 @@ const TaxInfoSheetForm = forwardRef((props, ref) => {
                 <div className='pr-3'>
                     <div className='flex'>
                         <label className='font-medium basis-1/2 text-center'>BANK NAME:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                        <input className='border-b-2 border-black p-1 basis-3/4'></input>
                     </div>
                     <div className='flex'>
                         <label className='font-medium basis-1/2 text-center'>TYPE OF ACCOUNT (CHECKING OR SAVINGS):</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                        <input className='border-b-2 border-black p-1 basis-3/4'></input>
                     </div>
                     <div className='flex'>
                         <label className='font-medium basis-1/2 text-center'>ROUTING NUMBER:</label>
-                        <span contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                        <input className='border-b-2 border-black p-1 basis-3/4'></input>
                     </div>
                     <div className='flex'>
                         <label className='font-medium basis-1/2 text-center'>ACCOUNT NUMBER:</label>
-                        <span placeholder='xx/xx/xxxx' contentEditable="true" className='border-b-2 border-black p-1 basis-3/4'></span>
+                        <input className='border-b-2 border-black p-1 basis-3/4'></input>
                     </div>
                 </div>
             </form>
-                <ReactToPrint
-                    trigger={() => <button className='bg-green-600 hover:bg-green-400 p-2 rounded-md text-white'>Print/Download</button>}
-                    content={() => componentRef.current}
-                />
+            <ReactToPrint
+                trigger={() => <button className='bg-green-600 hover:bg-green-400 p-2 rounded-md text-white'>Print/Download</button>}
+                content={() => componentRef.current}
+            />
 
 
         </div>

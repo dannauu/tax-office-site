@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { GrClose } from 'react-icons'
 
 const customStyles = {
     overlay: {
@@ -14,7 +15,8 @@ const customStyles = {
         transform: 'translate(-50%, -50%)',
         backgroundColor: 'red',
         // border: '10px double white',
-        boxShadow: '0px 0px 20px 2px red'
+        boxShadow: '0px 0px 20px 2px red',
+        width: '75%'
     },
 };
 
@@ -34,7 +36,7 @@ const ImportantMessage = () => {
             style={customStyles}
             contentLabel="Important Message"
         >
-                <h1 className='text-3xl pb-3 sm:text-base pt-2 text-white text-center'>We are now charging 4% when you pay with debit or credit card.</h1>
+                <h1 className='text-3xl pb-3 sm:text-base pt-2 text-white text-center'>All items and services reflect a cash payment price. Should you wish to pay with credit card, the full price of the item or service is assessed at a 4.00% increase.</h1>
                 <button onClick={closeModal} className='p-1 bg-white rounded-lg hover:text-red-600 hover:bg-red-200 m-auto flex font-semibold'>Close</button>
         </Modal>
     );
